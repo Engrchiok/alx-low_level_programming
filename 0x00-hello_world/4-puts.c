@@ -3,7 +3,7 @@
 /**
  * main - This is the call in function
  * puts - we are trying to print out a string with puts function
- * (0) - the value returned to the main
+ * Return: the value returned to the main is always 0
  */
 
 int main(void)
