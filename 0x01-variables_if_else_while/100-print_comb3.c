@@ -34,7 +34,7 @@ int main(void)
 			putchar(t9);
 			putchar(t10);
 
-			if (!(t10 == 57 && t9 ==56))
+			if (!(t10 == 57 && t9 == 56))
 			{
 				putchar(',');
 				putchar(' ');
