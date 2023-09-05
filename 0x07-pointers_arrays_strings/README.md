@@ -3,9 +3,14 @@ Toggle navigation
 C
  By: Julien Barbier
  Weight: 1
- Project will start Aug 28, 2023 6:00 AM, must end by Aug 29, 2023 6:00 AM
- Checker was released at Aug 28, 2023 12:00 PM
+ Project over - took place from Aug 28, 2023 6:00 AM to Aug 29, 2023 6:00 AM
  An auto review will be launched at the deadline
+In a nutshell…
+Auto QA review: 56.0/56 mandatory & 7.0/17 optional
+Altogether:  141.18%
+Mandatory: 100.0%
+Optional: 41.18%
+Calculation:  100.0% + (100.0% * 41.18%)  == 141.18%
 Concepts
 For this project, we expect you to look at this concept:
 
@@ -54,6 +59,7 @@ Great! You've completed the quiz successfully! Keep going! (Show quiz)
 Tasks
 0. memset
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that fills memory with a constant byte.
 
 Prototype: char *_memset(char *s, char b, unsigned int n);
@@ -137,9 +143,10 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x07-pointers_arrays_strings
 File: 0-memset.c
-   
+    
 1. memcpy
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that copies memory area.
 
 Prototype: char *_memcpy(char *dest, char *src, unsigned int n);
@@ -224,9 +231,10 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x07-pointers_arrays_strings
 File: 1-memcpy.c
-   
+    
 2. strchr
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that locates a character in a string.
 
 Prototype: char *_strchr(char *s, char c);
@@ -264,9 +272,10 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x07-pointers_arrays_strings
 File: 2-strchr.c
-   
+    
 3. strspn
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that gets the length of a prefix substring.
 
 Prototype: unsigned int _strspn(char *s, char *accept);
@@ -301,9 +310,10 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x07-pointers_arrays_strings
 File: 3-strspn.c
-   
+    
 4. strpbrk
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that searches a string for any of a set of bytes.
 
 Prototype: char *_strpbrk(char *s, char *accept);
@@ -339,9 +349,10 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x07-pointers_arrays_strings
 File: 4-strpbrk.c
-   
+    
 5. strstr
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that locates a substring.
 
 Prototype: char *_strstr(char *haystack, char *needle);
@@ -378,9 +389,10 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x07-pointers_arrays_strings
 File: 5-strstr.c
-   
+    
 6. Chess is mental torture
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that prints the chessboard.
 
 Prototype: void print_chessboard(char (*a)[8]);
@@ -424,9 +436,10 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x07-pointers_arrays_strings
 File: 7-print_chessboard.c
-   
+    
 7. The line of life is a ragged diagonal between duty and desire
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that prints the sum of the two diagonals of a square matrix of integers.
 
 Prototype: void print_diagsums(int *a, int size);
@@ -471,5 +484,56 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x07-pointers_arrays_strings
 File: 8-print_diagsums.c
+    
+8. Double pointer, double fun
+#advanced
+Score: 100.0% (Checks completed: 100.0%)
+Write a function that sets the value of a pointer to a char.
+
+Prototype: void set_string(char **s, char *to);
+julien@ubuntu:~/0x07$ cat 100-main.c
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char *s0 = "Bob Dylan";
+    char *s1 = "Robert Allen";
+
+    printf("%s, %s\n", s0, s1);
+    set_string(&s1, s0);
+    printf("%s, %s\n", s0, s1);
+    return (0);
+}
+julien@ubuntu:~/0x07$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-set_string.c -o 100-set_string
+julien@ubuntu:~/0x07$ ./100-set_string 
+Bob Dylan, Robert Allen
+Bob Dylan, Bob Dylan
+julien@ubuntu:~/0x07$ 
+Repo:
+
+GitHub repository: alx-low_level_programming
+Directory: 0x07-pointers_arrays_strings
+File: 100-set_string.c
    
+9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure
+#advanced
+Score: 0.0% (Checks completed: 0.0%)
+Create a file that contains the password for the crackme2 executable.
+
+Your file should contain the exact password, no new line, no extra space
+ltrace, ldd, gdb and objdump can help
+You may need to install the openssl library to run the crakme2 program: sudo apt install libssl-dev
+Edit the source list sudo nano /etc/apt/sources.list to add the following line: deb http://security.ubuntu.com/ubuntu xenial-security main Then sudo apt update and sudo apt install libssl1.0.0
+Repo:
+
+GitHub repository: alx-low_level_programming
+Directory: 0x07-pointers_arrays_strings
+File: 101-crackme_password
+     
 Copyright © 2023 ALX, All rights reserved.
