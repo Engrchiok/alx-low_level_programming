@@ -1,23 +1,19 @@
 #include "main.h"
 
 /**
- * print_line - function definition for drawing a straight line in the terminal.
- * @n - function parameter.
- * _putchar - function call for printing single integers('charaters').
- * Return: void.
+ * print_line - draws a straight line in the terminal
+ * @n: number of times the character _ should be printed
  */
-
 void print_line(int n)
 {
-	int a;
-
 	if (n <= 0)
 	{
 		_putchar('\n');
-	}
-	else
+	} else
 	{
-		for (a = 0; a <= n; a++)
+		int i;
+
+		for (i = 1; i <= n; i++)
 		{
 			_putchar('_');
 		}
