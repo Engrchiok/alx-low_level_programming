@@ -1,16 +1,20 @@
 /**
- * _isupper - function definition for identifying upper characters
- * @c: Integer function parameter
- * Return: Always returns 1 or 0
+ * _isupper - function definition for checking uppercase characters.
+ * @c: function parameter.
+ * Return: integer res, which is either 1 or 0.
  */
 
 int _isupper(int c)
 {
-	int ret;
+	int res;
 
 	if (c >= 'A' && c <= 'Z')
-		ret = 1;
-	else
-		ret = 0;
-	return (ret);
+	{
+		res = 1;
+	}
+	else 
+	{
+		res = 0;
+	}
+	return (res);
 }
