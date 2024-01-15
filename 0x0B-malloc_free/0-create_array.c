@@ -1,5 +1,12 @@
 #include <stdlib.h>
 
+/**
+ * create_array - function definition that creates an array of chars.
+ * @c: function parameter.
+ * @size: function parameter.
+ * Return: returns 0 or variable a.
+ */
+
 char *create_array(unsigned int size, char c)
 {
 	unsigned int b;
@@ -7,7 +14,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return 0;
+		return (NULL);
 	}
 	else
 	{
@@ -17,9 +24,9 @@ char *create_array(unsigned int size, char c)
 		}
 		if (a[0] == c && a[b - 1] == c)
 		{
-			return a;
+			return (a);
 		}
-		else return 0;
+		else
+			return (NULL);
 	}
 }
-
