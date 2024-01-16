@@ -36,6 +36,6 @@ char *str_concat(char *s1, char *s2)
 		con[j] = s2[i];
 	}
 	con[j] = s2[i];
-//	free(con);
+/*	free(con);*/
 	return (con);
 }
