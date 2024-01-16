@@ -28,6 +28,6 @@ char *_strdup(char *str)
 		dup[i] = str[i];
 	}
 	dup[i] = str[i];
-	free(dup);
+/*	free(dup);*/
 	return (dup);
 }
