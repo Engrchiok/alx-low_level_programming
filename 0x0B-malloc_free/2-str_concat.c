@@ -13,10 +13,6 @@ char *str_concat(char *s1, char *s2)
 	int l1, l2, i, j;
 	char *con;
 
-	/*if (s1 == NULL && s2 == NULL)
-	{
-		return (NULL);
-	}*/
 	if (s1 == NULL)
 	{
 		l1 = 0;
