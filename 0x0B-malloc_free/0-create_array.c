@@ -29,6 +29,7 @@ char *create_array(unsigned int size, char c)
 		{
 			a[b] = c;
 		}
+		a[b] = 0;
 		if (a[0] == c && a[b - 1] == c)
 		{
 			return (a);
