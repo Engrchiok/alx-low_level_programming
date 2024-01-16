@@ -9,16 +9,13 @@
 char *_strdup(char *str)
 {
 	int i, len;
-	char *dup, *cpy;
+	char *dup;
 
 	if (*str == 0)
 	{
 		return (0);
 	}
-	else
-	{
-	cpy = str;
-	for (len = 0; *cpy != 0; len++, cpy++)
+	for (len = 0; str[len] != 0; len++)
 	{
 	}
 	dup = (char *)malloc((len + 1) * sizeof(char));
@@ -26,15 +23,11 @@ char *_strdup(char *str)
 	{
 		return (0);
 	}
-	else
+	for (i = 0; str[i] != 0; i++)
 	{
-		for (i = 0; *str != 0; i++, str++)
-		{
-			dup[i] = *str;
-		}
-		dup[i] = *str;
-		free(dup);
-		return (dup);
+		dup[i] = str[i];
 	}
-	}
+	dup[i] = str[i];
+	free(dup);
+	return (dup);
 }
