@@ -11,14 +11,19 @@ char *_strdup(char *str)
 	int i, len;
 	char *dup, *cpy;
 
+	if (*str == 0)
+	{
+		return (0);
+	}
+	else
+	{
 	cpy = str;
 	for (len = 0; *cpy != 0; len++, cpy++)
 	{
 	}
-	dup = malloc((len + 1) * sizeof(char));
-	if (*str == 0)
+	dup = (char *)malloc((len + 1) * sizeof(char));
+	if (dup == 0)
 	{
-		free(cpy);
 		return (0);
 	}
 	else
@@ -30,5 +35,6 @@ char *_strdup(char *str)
 		dup[i] = *str;
 		free(dup);
 		return (dup);
+	}
 	}
 }
