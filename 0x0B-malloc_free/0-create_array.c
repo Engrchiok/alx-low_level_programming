@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * create_array: function definition that creates an array of chars.
+ * create_array - function definition that creates an array of chars.
  * @c: function parameter.
  * @size: function parameter.
  * Return: returns 0 or variable a.
@@ -30,3 +30,4 @@ char *create_array(unsigned int size, char c)
 			return (0);
 	}
 }
+
