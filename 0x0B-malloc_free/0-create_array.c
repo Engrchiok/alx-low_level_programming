@@ -1,11 +1,9 @@
 #include <stdlib.h>
 
 /**
- * create_array: function definition that returns a pointer.
+ * create_array: function definition that creates an array of chars.
  * @c: function parameter.
  * @size: function parameter.
- * @a: memory allocation return pointer.
- * @b: integer counter.
  * Return: returns 0 or variable a.
  */
 
