@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 	char *str, *cpy;
 
 	if (ac == 0 || av == NULL)
-		return NULL;
+		return (NULL);
 	for (a = 0, l = 0; a < ac; a++)
 	{
 		cpy = av[a];
@@ -24,7 +24,7 @@ char *argstostr(int ac, char **av)
 	}
 	str = malloc((sizeof(char) * l) + 1);
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 	for (a = 0, b = 0; a < ac; a++)
 	{
 		while (*av[a] != 0)
