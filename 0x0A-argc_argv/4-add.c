@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - function call.
+ * @argc: function parameter.
+ * @argv: function parameter.
+ * Return: always 0 or 1.
+ */
+
 int main(int argc, char *argv[])
 {
 	int sum, i, b;
@@ -15,13 +22,12 @@ int main(int argc, char *argv[])
 		if (*(test + b) < '0' || *(test + b) > '9')
 				{
 				printf("Error\n");
-				return 1;
+				return (1);
 				}
 		}
 		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	(void)argc;
-	return 0;
+	return (0);
 }
-
