@@ -5,7 +5,7 @@
  * @argc: function parameter.
  * @argv: function parameter.
  * Return: always return 0.
- * */
+ */
 
 int main(int argc, char *argv[])
 {
