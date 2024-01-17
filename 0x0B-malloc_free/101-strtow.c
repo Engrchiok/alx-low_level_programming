@@ -25,10 +25,13 @@ char **strtow(char *str)
 
 	for (a = 0, b = 0, l = 0; str[a] != 0; a++)
 	{
-		if (str[a] != ' ' && str[a] != 0)           
+		if (str[a] != ' ' && str[a] != 0)
 			l++;
 		if (str[a] == ' ' && l > 0)
-		{                                               star[b] = malloc(sizeof(char) * l + 1);
+		{
+			star[b] = malloc(sizeof(char) * l + 1);
+			if (star[b] == 0)
+				return (NULL);
 			l = 0;
 			b++;
 		}
@@ -36,6 +39,8 @@ char **strtow(char *str)
 	if (l > 0)
 	{
 		star[b] = malloc(sizeof(char) * l + 1);
+		if (star[b] == 0)
+			return (NULL);
 		l = 0;
 	}
 
