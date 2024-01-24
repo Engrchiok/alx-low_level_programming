@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include "dog.h"
 
-/*void init_dog(struct dog *d, char *name, float age, char *owner);*/
+/**
+ * init_dog - finction definition for initializing structs.
+ * @d: function parameter.
+ * @name: function parameter
+ * @owner: function parameter.
+ * Return: always void.
+ */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
