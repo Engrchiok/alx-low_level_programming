@@ -4,7 +4,8 @@
 /**
  * init_dog - finction definition for initializing structs.
  * @d: function parameter.
- * @name: function parameter
+ * @name: function parameter.
+ * @age: function parameter.
  * @owner: function parameter.
  * Return: always void.
  */
