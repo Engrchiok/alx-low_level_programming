@@ -3,6 +3,7 @@
  * @array: function parameter.
  * @size: function parameter.
  * @cmp: function parameter.
+ * Return: always a or -1.
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
