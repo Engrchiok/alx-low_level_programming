@@ -1,8 +1,7 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - 
- * Write a function that returns the sum of all its parameters.
+ * sum_them_all - function that returns the sum of all its parameters.
  * @n: function parameters.
  * Return: always 0 or sum.
  */
@@ -15,12 +14,12 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (n == 0)
 	{
-		return 0;
+		return (0);
 	}
-	va_start (a, n);
+	va_start(a, n);
 	for (i = 0, sum = 0; i < n; i++)
 	{
-		sum += va_arg (a, int);
+		sum += va_arg(a, int);
 	}
 	return (sum);
 }
