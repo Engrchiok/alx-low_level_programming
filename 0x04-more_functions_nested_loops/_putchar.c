@@ -1,6 +1,7 @@
+#include <stdio.h>
 #include <unistd.h>
 
-int _putchar(int a)
+void _putchar(char a)
 {
-	return (write(1, &a, 1));
+	write(1, &a, sizeof(char));
 }
