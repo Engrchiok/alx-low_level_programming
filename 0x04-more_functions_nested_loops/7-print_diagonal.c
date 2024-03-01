@@ -4,7 +4,6 @@
 /**
  * print_diagonal - function definition for drawing a diagonal line on the terminal.
  * @n: function parameter.
- * _putchar - funtion call for printing single integers ('characters').
  * Return: always void.
  */
 
