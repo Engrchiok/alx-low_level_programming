@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - function call for program execution.
+ * @void: no function parameter needed.
  * printf - function call to print data.
  * Return: always 0.
  */
