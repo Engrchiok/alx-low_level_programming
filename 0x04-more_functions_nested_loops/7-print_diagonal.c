@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -19,10 +20,10 @@ void print_diagonal(int n)
 	{
 		for (d = 1; d <= n; d++)
 		{
-		for (g = 1; g < d; g++)
-		{
-			_putchar(' ');
-		}
+			for (g = 1; g < d; g++)
+			{
+				_putchar(' ');
+			}
 			_putchar('\\');
 			_putchar(10);
 		}
