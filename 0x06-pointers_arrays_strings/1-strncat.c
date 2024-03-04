@@ -1,9 +1,11 @@
+#include <stdio.h>
+
 /**
  * _strncat - function definition for concatenating two strings to a n extra bytes from the reference string to the destination string.
- * @dest: function argument for final output of concatenation.
- * @src: function argument for reference string to concatenate.
- * @n: function argument for amount of extra bytes to concactenate.
- * Return: always returns the pointer variable, dest, which is the concatenated string.
+ * @dest: function parameter.
+ * @src: function parameter.
+ * @n: function parameter.
+ * Return: always returns the pointer variable, dest.
  */
 
 char *_strncat(char *dest, char *src, int n)
