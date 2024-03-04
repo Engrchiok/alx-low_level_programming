@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _strncat - function definition for concatenating two strings to a n extra bytes..
+ * _strncat - function definition.
  * @dest: function parameter.
  * @src: function parameter.
  * @n: function parameter.
@@ -22,7 +22,8 @@ char *_strncat(char *dest, char *src, int n)
 		{
 			*a++ = *src++;
 		}
-		else break;
+		else
+			break;
 	}
 	*a = 0;
 	return (dest);
