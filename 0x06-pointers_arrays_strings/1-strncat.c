@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _strncat - function definition for concatenating two strings to a n extra bytes from the reference string to the destination string.
+ * _strncat - function definition for concatenating two strings to a n extra bytes..
  * @dest: function parameter.
  * @src: function parameter.
  * @n: function parameter.
