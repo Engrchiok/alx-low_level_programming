@@ -11,7 +11,7 @@ char **strtow(char *str)
 	char **star, *cpy;
 	int a, b, l;
 
-	if (str == NULL)
+	if (str == NULL || str == "")
 		return (NULL);
 	for (a = 0, l = 0; str[a] != 0; a++)
 	{
