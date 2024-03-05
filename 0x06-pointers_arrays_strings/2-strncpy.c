@@ -1,3 +1,13 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * _strncpy - function defined.
+ * @dest: function parameter.
+ * @src: function parameter.
+ * @n: function parameter.
+ */
+
 char *_strncpy(char *dest, char *src, int n)
 {
 	int a;
@@ -8,14 +18,16 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		if (*src != 0)
 		{
-		*dest++ = *src++;
-		if (*dest != 0)
+			*dest++ = *src++;
+			if (*dest == 0)
+			{
+				break;
+			}
+		}
+		else
 		{
-			continue;
+			*dest++= '\0';
 		}
-		else break;
-		}
-		else break;
 	}
 	return (b);
 }
