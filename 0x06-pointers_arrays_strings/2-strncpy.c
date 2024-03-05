@@ -6,6 +6,7 @@
  * @dest: function parameter.
  * @src: function parameter.
  * @n: function parameter.
+ * Return: always variable b.
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -26,7 +27,7 @@ char *_strncpy(char *dest, char *src, int n)
 		}
 		else
 		{
-			*dest++= '\0';
+			*dest++ = '\0';
 		}
 	}
 	return (b);
