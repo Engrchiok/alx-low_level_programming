@@ -1,3 +1,12 @@
+#include <stdio.h>
+
+/**
+ * reverse_array - function defined.
+ * @a: function parameter.
+ * @n: function parameter.
+ * Return: always void.
+ */
+
 void reverse_array(int *a, int n)
 {
 	int *b;
