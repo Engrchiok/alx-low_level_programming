@@ -1,3 +1,11 @@
+#include <stdio.h>
+
+/**
+ * cap_string - function defined.
+ * @a: function parameter.
+ * Return: always variable a.
+ */
+
 char *cap_string(char *a)
 {
 	char *b;
