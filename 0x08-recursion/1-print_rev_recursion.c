@@ -1,4 +1,11 @@
+#include <stdio.h>
 #include "main.h"
+
+/**
+ * _print_rev_recursion - function definition.
+ * @s: function parameter.
+ * Return: always void.
+ */
 
 void _print_rev_recursion(char *s)
 {
