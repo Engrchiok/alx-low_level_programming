@@ -1,4 +1,11 @@
+#include <stdio.h>
 #include "main.h"
+
+/**
+ * print_number - function definition.
+ * @n: function parameter.
+ * Return: nothing.
+ */
 
 void print_number(int n)
 {
