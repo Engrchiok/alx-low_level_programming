@@ -11,8 +11,6 @@ void print_number(int n)
 {
 	int a, b, c , d, e;
 
-	a = n;
-	b = n;
 	c = 1;
 	d = 1;
 	if (n < 0)
@@ -20,6 +18,11 @@ void print_number(int n)
 		a = -n;
 		b = -n;
 		_putchar('-');
+	}
+	else
+	{
+		a = n;
+		b = n;
 	}
 	while (a > 9)
 	{
