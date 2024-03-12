@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-	int a, b, c , d, e;
+	int a, b, c, d, e;
 
 	c = 1;
 	d = 1;
@@ -38,5 +38,4 @@ void print_number(int n)
 		d = d / 10;
 		c--;
 	}
-	return;
 }
