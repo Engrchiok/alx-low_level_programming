@@ -1,11 +1,23 @@
-char *_rev(char *);
+#include <stdio.h>
+#include "main.h"
 
-int _pal(char *, char *);
+/**
+ * _palindrome - function definition.
+ * @s: function parameter.
+ * Return: always an integer.
+ */
 
 int is_palindrome(char *s)
 {
 	return (_pal(_rev(s), s));
 }
+
+
+/**
+ * _rev - function definition.
+ * @a: function parameter.
+ * Return: always an integer.
+ */
 
 char *_rev(char *a)
 {
@@ -15,6 +27,14 @@ char *_rev(char *a)
 	}
 	return (_rev(a + 1));
 }
+
+
+/**
+ * _pal - function definition.
+ * @b: function parameter.
+ * @c: function parameter.
+ * Return: always an integer.
+ */
 
 int _pal(char *b, char *c)
 {
@@ -28,10 +48,3 @@ int _pal(char *b, char *c)
 	}
 	else return (1 * _pal(b - 1, c + 1));
 }
-
-
-
-
-
-
-
