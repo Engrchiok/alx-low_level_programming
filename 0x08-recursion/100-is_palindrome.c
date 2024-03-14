@@ -46,5 +46,6 @@ int _pal(char *b, char *c)
 	{
 		return (0);
 	}
-	else return (1 * _pal(b - 1, c + 1));
+	else
+		return (1 * _pal(b - 1, c + 1));
 }
