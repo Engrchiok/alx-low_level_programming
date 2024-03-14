@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _palindrome - function definition.
+ * is_palindrome - function definition.
  * @s: function parameter.
  * Return: always an integer.
  */
@@ -23,7 +23,7 @@ char *_rev(char *a)
 {
 	if (*(a + 1) == 0)
 	{
-		return a;
+		return (a);
 	}
 	return (_rev(a + 1));
 }
@@ -40,11 +40,11 @@ int _pal(char *b, char *c)
 {
 	if (*c == 0)
 	{
-		return 1;
+		return (1);
 	}
 	else if (*b != *c)
 	{
-		return 0;
+		return (0);
 	}
 	else return (1 * _pal(b - 1, c + 1));
 }
